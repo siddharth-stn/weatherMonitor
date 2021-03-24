@@ -1,0 +1,62 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: #e3e264;
+}
+
+@media (max-width: 813px) and (min-width: 374px) {
+  #headerDiv {
+    background-color: #0000d5;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+
+  #formElem {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    font-size: 1.1rem;
+    height: 30vh;
+    justify-content: space-around;
+  }
+
+  #formElem > label {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #location {
+    border: black 2px solid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    font-size: 1.2rem;
+  }
+
+  #goBtn {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    font-size: 1.2rem;
+  }
+
+  #display {
+    border: black solid 2px;
+    background-color: #fbfae4;
+    height: 100vh;
+    display: flex;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: column;
+  }
+
+  #tempDiv, #windDiv, #cloudDiv {
+    border: brown solid 2px;
+    display: flex;
+    justify-content: space-around;
+  }
+}
