@@ -7,7 +7,7 @@ function meterPerSecToKmPerHr (mPerS) {
 
 const getWetherData = async (cityName) => {
   const dataBody = await fetch(
-    `https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=${apiKey}`,
+    `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=${apiKey}`,
     { mode: "cors" }
   );
   if (dataBody.status >= 200 && dataBody.status <= 299) {
